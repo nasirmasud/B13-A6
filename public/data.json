@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Canva",
+    "description": "Create stunning graphic designs with easy drag-and-drop online tools.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100M+ Stock Photos", "Brand Kit Pro", "Magic Resize Tool"],
+    "icon": "https://react-icons.github.io/react-icons/icons?name=si-canva"
+  },
+  {
+    "id": 2,
+    "name": "Framer",
+    "description": "Build high-performance professional websites with a visual canvas layout.",
+    "price": 15.0,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Custom Domains", "CMS Integration", "Advanced Animations"],
+    "icon": "https://react-icons.github.io/react-icons/icons?name=si-framer"
+  },
+  {
+    "id": 3,
+    "name": "Notion",
+    "description": "Connect your teams and projects in one powerful, unified workspace app.",
+    "price": 10.0,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["Unlimited Blocks", "AI Assistant", "Collaborative Editing"],
+    "icon": "https://react-icons.github.io/react-icons/icons?name=si-notion"
+  },
+  {
+    "id": 4,
+    "name": "Cursor",
+    "description": "The AI-native code editor designed to make programming faster than ever.",
+    "price": 20.0,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": ["AI Code Completion", "Terminal Chat", "Codebase Indexing"],
+    "icon": "https://react-icons.github.io/react-icons/icons?name=vsc-code"
+  },
+  {
+    "id": 5,
+    "name": "Loom",
+    "description": "Record quick videos of your screen and cam to communicate more clearly.",
+    "price": 0.0,
+    "period": "monthly",
+    "tag": "Free Tier",
+    "tagType": "new",
+    "features": ["HD Recording", "Video Privacy", "Instant Editing"],
+    "icon": "https://react-icons.github.io/react-icons/icons?name=si-loom"
+  },
+  {
+    "id": 6,
+    "name": "Ahrefs",
+    "description": "Optimize your website ranking with premium SEO analysis and keyword data.",
+    "price": 99.0,
+    "period": "monthly",
+    "tag": "Industry Standard",
+    "tagType": "best seller",
+    "features": ["Site Explorer", "Rank Tracker", "Backlink Checker"],
+    "icon": "https://react-icons.github.io/react-icons/icons?name=si-google-search-console"
+  }
+]
