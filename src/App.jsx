@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 import ProductCollection from "./components/ProductCollection";
+import Transform from "./components/Transform";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ProductCollection />
       <GetStarted />
       <Pricing />
+      <Transform />
     </>
   );
 }
