@@ -8,7 +8,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["100M+ Stock Photos", "Brand Kit Pro", "Magic Resize Tool"],
-    "icon": "https://react-icons.github.io/react-icons/icons?name=si-canva"
+    "icon": "https://i.ibb.co.com/bf7SGfW/camera-8775444-1.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["Custom Domains", "CMS Integration", "Advanced Animations"],
-    "icon": "https://react-icons.github.io/react-icons/icons?name=si-framer"
+    "icon": "https://i.ibb.co.com/N2g3TGd6/writing-2327400-1.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["Unlimited Blocks", "AI Assistant", "Collaborative Editing"],
-    "icon": "https://react-icons.github.io/react-icons/icons?name=si-notion"
+    "icon": "https://i.ibb.co.com/yFRgQfq7/social-media.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "Trending",
     "tagType": "popular",
     "features": ["AI Code Completion", "Terminal Chat", "Codebase Indexing"],
-    "icon": "https://react-icons.github.io/react-icons/icons?name=vsc-code"
+    "icon": "https://i.ibb.co.com/JFzkhBjx/portfolio.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "Free Tier",
     "tagType": "new",
     "features": ["HD Recording", "Video Privacy", "Instant Editing"],
-    "icon": "https://react-icons.github.io/react-icons/icons?name=si-loom"
+    "icon": "https://i.ibb.co.com/GvC39wcJ/operation.png"
   },
   {
     "id": 6,
@@ -63,6 +63,6 @@
     "tag": "Industry Standard",
     "tagType": "best seller",
     "features": ["Site Explorer", "Rank Tracker", "Backlink Checker"],
-    "icon": "https://react-icons.github.io/react-icons/icons?name=si-google-search-console"
+    "icon": "https://i.ibb.co.com/Ndr6Wm7d/design-tool.png"
   }
 ]

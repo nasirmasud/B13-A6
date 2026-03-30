@@ -2,7 +2,7 @@ import React from "react";
 
 const AppStatus = () => {
   return (
-    <div className='bg-gradient-to-r from-[#6130f7] to-[#9a1ffa] py-10 px-5 my-10'>
+    <div className='bg-gradient-to-r from-[#6130f7] to-[#9a1ffa] py-10 px-5 my-10 mb-28'>
       <div className='flex flex-col lg:flex-row justify-center gap-4 items-center text-white lg:gap-32'>
         <div className='text-center flex flex-col'>
           <h2 className='text-4xl lg:text-5xl font-bold'>50K+</h2>
