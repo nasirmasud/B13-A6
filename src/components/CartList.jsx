@@ -1,43 +1,31 @@
 import React from "react";
 import { FcOldTimeCamera } from "react-icons/fc";
 
-const CartList = () => {
+const CartList = ({ cartData, setCartData }) => {
+  console.log(setCartData);
+
   return (
     <div className='container mx-auto p-6 bg-white rounded-xl shadow-sm border border-gray-100'>
       <h2 className='text-2xl font-bold text-slate-900 py-6'>Your Cart</h2>
 
       {/* Cart Items List */}
       <div className='space-y-4'>
-        {/* Item 1 */}
-        <div className='flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-gray-50'>
-          <div className='flex items-center gap-4'>
-            <div className='w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl shadow-sm'>
-              <FcOldTimeCamera />
+        {cartData.map((item) => (
+          <div className='flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-gray-50'>
+            <div className='flex items-center gap-4'>
+              <div className='w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl shadow-sm'>
+                <img src={item.icon} alt={item.name} className='object-fit' />
+              </div>
+              <div>
+                <h3 className='font-semibold text-slate-800'>{item.name}</h3>
+                <p className='text-slate-500'>$29</p>
+              </div>
             </div>
-            <div>
-              <h3 className='font-semibold text-slate-800'>AI Writing Pro</h3>
-              <p className='text-slate-500'>$29</p>
-            </div>
+            <button className='text-pink-500 font-medium hover:text-pink-600 transition-colors'>
+              Remove
+            </button>
           </div>
-          <button className='text-pink-500 font-medium hover:text-pink-600 transition-colors'>
-            Remove
-          </button>
-        </div>
-        {/* Item 1 */}
-        <div className='flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-gray-50'>
-          <div className='flex items-center gap-4'>
-            <div className='w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl shadow-sm'>
-              <FcOldTimeCamera />
-            </div>
-            <div>
-              <h3 className='font-semibold text-slate-800'>AI Writing Pro</h3>
-              <p className='text-slate-500'>$29</p>
-            </div>
-          </div>
-          <button className='text-pink-500 font-medium hover:text-pink-600 transition-colors'>
-            Remove
-          </button>
-        </div>
+        ))}
       </div>
 
       {/* Total Section */}

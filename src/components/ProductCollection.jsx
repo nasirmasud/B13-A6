@@ -2,7 +2,13 @@ import React, { use } from "react";
 import ProductCard from "./ProductCard";
 import CartList from "./CartList";
 
-const ProductCollection = ({ modelPromise }) => {
+const ProductCollection = ({
+  modelPromise,
+  activeTab,
+  setActiveTab,
+  cartData,
+  setCartData,
+}) => {
   const models = use(modelPromise);
 
   return (
@@ -16,21 +22,43 @@ const ProductCollection = ({ modelPromise }) => {
         to boost your productivity and creativity.
       </p>
       <div className='flex justify-center mt-6'>
-        <div className='inline-flex  border border-slate-300 rounded-full'>
-          <button className='btn bg-gradient-to-r from-[#6130f7] to-[#9a1ffa] text-white rounded-full px-4 py-2'>
-            Products
-          </button>
-          <button className='btn bg-transparent border-none rounded-full px-4 py-2 text-black'>
-            Cart (2)
-          </button>
+        <div className='tabs tabs-boxed rounded-full bg-white border border-slate-300'>
+          <input
+            type='radio'
+            name='my_tabs'
+            className='tab !h-12 !rounded-full checked:!bg-gradient-to-r checked:from-[#6130f7] checked:to-[#9a1ffa] checked:!text-white w-40'
+            aria-label='Products'
+            defaultChecked
+            onClick={() => setActiveTab("products")}
+          />
+          <input
+            type='radio'
+            name='my_tabs'
+            className='tab !h-12 !rounded-full checked:!bg-gradient-to-r checked:from-[#6130f7] checked:to-[#9a1ffa] checked:!text-white w-40'
+            aria-label='Cart'
+            onClick={() => setActiveTab("cart")}
+          />
         </div>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-x-8 justify-items-center mt-12'>
-        <ProductCard models={models} />
-      </div>
-      <div className='gap-y-10 justify-items-center mt-12 px-20 hidden'>
-        <CartList />
-      </div>
+
+      {activeTab === "products" && (
+        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-x-8 justify-items-center mt-12'>
+          {models.map((model) => (
+            <ProductCard
+              key={model.id}
+              model={model}
+              cartData={cartData}
+              setCartData={setCartData}
+            />
+          ))}
+        </div>
+      )}
+
+      {activeTab === "cart" && (
+        <div className='gap-y-10 justify-items-center mt-12 px-20'>
+          <CartList cartData={cartData} setCartData={setCartData} />
+        </div>
+      )}
     </div>
   );
 };
