@@ -129,7 +129,7 @@ const Pricing = () => {
             </ul>
             <div className='mt-6'>
               <button className='btn btn-primary rounded-full w-full h-14 text-lg bg-gradient-to-tr from-[#622ff7] to-[#9315fa] text-white font-bold border-nonetext-lg hover:bg-[#]'>
-                Get Started Free
+                Contact Sales
               </button>
             </div>
           </div>

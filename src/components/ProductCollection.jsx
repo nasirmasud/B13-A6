@@ -1,8 +1,10 @@
-import React from "react";
+import React, { use } from "react";
 import ProductCard from "./ProductCard";
 import CartList from "./CartList";
 
-const ProductCollection = () => {
+const ProductCollection = ({ modelPromise }) => {
+  const models = use(modelPromise);
+
   return (
     <div className='container mx-auto space-y-5 pb-20'>
       <h2 className='text-5xl font-bold text-center text-slate-900'>
@@ -24,14 +26,9 @@ const ProductCollection = () => {
         </div>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-x-8 justify-items-center mt-12'>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard models={models} />
       </div>
-      <div className='gap-y-10 justify-items-center mt-12 px-20'>
+      <div className='gap-y-10 justify-items-center mt-12 px-20 hidden'>
         <CartList />
       </div>
     </div>

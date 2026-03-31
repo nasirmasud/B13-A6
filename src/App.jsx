@@ -8,13 +8,19 @@ import ProductCollection from "./components/ProductCollection";
 import Transform from "./components/Transform";
 import Footer from "./components/Footer";
 
+const getAllData = async () => {
+  const res = await fetch("/data.json");
+  return res.json();
+};
+const modelPromise = getAllData();
+
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
       <AppStatus />
-      <ProductCollection />
+      <ProductCollection modelPromise={modelPromise} />
       <GetStarted />
       <Pricing />
       <Transform />

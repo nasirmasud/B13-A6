@@ -38,7 +38,7 @@
     "description": "The AI-native code editor designed to make programming faster than ever.",
     "price": 20.0,
     "period": "monthly",
-    "tag": "Trending",
+    "tag": "Popular",
     "tagType": "popular",
     "features": ["AI Code Completion", "Terminal Chat", "Codebase Indexing"],
     "icon": "https://i.ibb.co.com/JFzkhBjx/portfolio.png"
@@ -49,7 +49,7 @@
     "description": "Record quick videos of your screen and cam to communicate more clearly.",
     "price": 0.0,
     "period": "monthly",
-    "tag": "Free Tier",
+    "tag": "New",
     "tagType": "new",
     "features": ["HD Recording", "Video Privacy", "Instant Editing"],
     "icon": "https://i.ibb.co.com/GvC39wcJ/operation.png"
@@ -60,7 +60,7 @@
     "description": "Optimize your website ranking with premium SEO analysis and keyword data.",
     "price": 99.0,
     "period": "monthly",
-    "tag": "Industry Standard",
+    "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["Site Explorer", "Rank Tracker", "Backlink Checker"],
     "icon": "https://i.ibb.co.com/Ndr6Wm7d/design-tool.png"
