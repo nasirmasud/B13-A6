@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 import ProductCollection from "./components/ProductCollection";
 import Transform from "./components/Transform";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <GetStarted />
       <Pricing />
       <Transform />
+      <Footer />
     </>
   );
 }

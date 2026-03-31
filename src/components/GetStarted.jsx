@@ -18,7 +18,7 @@ const GetStarted = () => {
             <div className='badge bg-[#7433db] text-white rounded-full w-8 h-8 ml-auto'>
               01
             </div>
-            <div className='badge bg-slate-200 text-white rounded-full w-24 h-24 mx-auto pt-4'>
+            <div className='badge bg-slate-200 text-white rounded-full w-24 h-24 mx-auto'>
               <img src={userImg} alt='blink' className='w-12 h-12' />
             </div>
             <h3 className='text-2xl font-bold text-center py-4'>
@@ -35,7 +35,7 @@ const GetStarted = () => {
             <div className='badge bg-[#7433db] text-white rounded-full w-8 h-8 ml-auto'>
               02
             </div>
-            <div className='badge bg-slate-200 text-white rounded-full w-24 h-24 mx-auto pt-4'>
+            <div className='badge bg-slate-200 text-white rounded-full w-24 h-24 mx-auto'>
               <img src={packageImg} alt='blink' className='w-12 h-12' />
             </div>
             <h3 className='text-2xl font-bold text-center py-4'>
@@ -51,7 +51,7 @@ const GetStarted = () => {
             <div className='badge bg-[#7433db] text-white rounded-full w-8 h-8 ml-auto'>
               03
             </div>
-            <div className='badge bg-slate-200 text-white rounded-full w-24 h-24 mx-auto pt-4'>
+            <div className='badge bg-slate-200 text-white rounded-full w-24 h-24 mx-auto'>
               <img src={rocketImg} alt='blink' className='w-12 h-12' />
             </div>
             <h3 className='text-2xl font-bold text-center py-4'>
