@@ -38,7 +38,7 @@ const ProductCard = () => {
               </li>
             </ul>
             <div className='mt-6'>
-              <button className='btn btn-primary rounded-full w-full h-14 bg-[#7c3aed] text-white border-none font-semibold text-lg hover:bg-[#6d28d9]'>
+              <button className='btn rounded-full w-full h-14 bg-gradient-to-r from-[#6130f7] to-[#9a1ffa] text-white  border-none font-semibold text-lg hover:bg-[#6d28d9]'>
                 Buy Now
               </button>
             </div>
