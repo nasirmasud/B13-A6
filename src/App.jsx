@@ -18,7 +18,6 @@ const modelPromise = getAllData();
 function App() {
   const [activeTab, setActiveTab] = useState("products");
   const [cartData, setCartData] = useState([]);
-  console.log(cartData);
 
   return (
     <>
