@@ -1,16 +1,17 @@
-# React + Vite
+### A Little Description of This App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based web application that showcases a curated collection of premium digital tools and SaaS products (such as Canva, Framer, Notion, and Cursor). It allows users to browse product details, add items to a shopping cart, and explore pricing plans, designed to help boost productivity and creativity.
 
-Currently, two official plugins are available:
+### Technology Used Here
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Frontend Framework**: React
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with DaisyUI for UI components
+- **Icons**: React Icons
+- **Notifications**: React Toastify
 
-## React Compiler
+### 3 Features About This Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Product Browsing with Tabs**: Users can switch between "Products" and "Cart" tabs to view a grid of digital tools, each with descriptions, pricing, tags (e.g., "Popular", "New"), and feature lists.
+2. **Shopping Cart Functionality**: Items can be added to the cart, with a live count displayed in the navbar and tab label; the cart view shows selected products for easy management.
+3. **Responsive and Modern UI**: Built with Tailwind CSS and DaisyUI, the app features a clean, gradient-styled interface with sections like Hero, Pricing, and Footer, ensuring a seamless experience across devices.
