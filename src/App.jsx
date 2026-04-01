@@ -8,6 +8,7 @@ import ProductCollection from "./components/ProductCollection";
 import Transform from "./components/Transform";
 import Footer from "./components/Footer";
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 const getAllData = async () => {
   const res = await fetch("/data.json");
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar setActiveTab={setActiveTab} cartData={cartData} />
       <Hero />
       <AppStatus />
       <ProductCollection
@@ -35,6 +36,7 @@ function App() {
       <Pricing />
       <Transform />
       <Footer />
+      <ToastContainer />
     </>
   );
 }

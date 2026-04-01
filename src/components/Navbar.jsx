@@ -1,9 +1,22 @@
 import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({ setActiveTab, cartData }) => {
+  const handleCartClick = () => {
+    setActiveTab("cart");
+    setTimeout(() => {
+      const element = document.getElementById("cart-section");
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 100);
+  };
+
   return (
-    <div className='navbar bg-base-100 container mx-auto border-b-1 border-gray-100'>
+    <div className='navbar bg-base-100 container mx-auto border-b-1 border-gray-100 shadow-xl sticky top-0 z-50'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
@@ -66,7 +79,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className='navbar-end flex gap-2'>
-        <a className='cursor-pointer'>
+        <a onClick={handleCartClick} className='cursor-pointer indicator mr-2'>
+          {cartData.length > 0 && (
+            <span className='indicator-item badge badge-secondary badge-sm test-white px-2 rounded-full border-none bg-red-600'>
+              {cartData.length}
+            </span>
+          )}
           <MdOutlineShoppingCart className='text-xl' />
         </a>
         <a className='text-[16px] font-medium'>Login</a>

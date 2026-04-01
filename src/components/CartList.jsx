@@ -1,20 +1,26 @@
 import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const CartList = ({ cartData, setCartData }) => {
   const totalPrice = cartData.reduce((sum, item) => sum + item.price, 0);
 
   const handlePayment = () => {
     setCartData([]);
+    toast.info("Payment Successful! Your cart is now empty.");
   };
 
   const handleDelete = (item) => {
     const deletedItemArray = cartData.filter((aItem) => aItem.id !== item.id);
     setCartData(deletedItemArray);
+    toast.error(`${item.name} Removed from Cart`);
   };
 
   return (
-    <div className='container mx-auto p-6 bg-white rounded-xl shadow-sm border border-gray-100'>
+    <div
+      id='cart-section'
+      className='container mx-auto p-6 bg-white rounded-xl shadow-sm border border-gray-100'
+    >
       <h2 className='text-2xl font-bold text-slate-900 py-6'>Your Cart</h2>
 
       {cartData.length === 0 ? (

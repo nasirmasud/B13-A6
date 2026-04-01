@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const ProductCard = ({ model, cartData, setCartData }) => {
   const [isPurchased, setIsPurchased] = useState(false);
   const handlePurchased = () => {
     setIsPurchased(true);
     setCartData([...cartData, model]);
+    toast.success(`${model.name} added to Cart`);
   };
 
   return (

@@ -35,7 +35,7 @@ const ProductCollection = ({
             type='radio'
             name='my_tabs'
             className='tab !h-12 !rounded-full checked:!bg-gradient-to-r checked:from-[#6130f7] checked:to-[#9a1ffa] checked:!text-white w-40'
-            aria-label='Cart'
+            aria-label={`Cart (${cartData.length})`}
             onClick={() => setActiveTab("cart")}
           />
         </div>
