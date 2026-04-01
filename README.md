@@ -1,6 +1,6 @@
-### A Little Description of This App
+### Description of This App
 
-This is a React-based web application that showcases a curated collection of premium digital tools and SaaS products (such as Canva, Framer, Notion, and Cursor). It allows users to browse product details, add items to a shopping cart, and explore pricing plans, designed to help boost productivity and creativity.
+This is a React-based web application that showcases a collection of premium digital tools and SaaS products (such as Canva, Framer, Notion, and Cursor). It allows users to browse product details, add items to a shopping cart, and explore pricing plans, designed to help boost productivity and creativity.
 
 ### Technology Used Here
 
